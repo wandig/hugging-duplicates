@@ -185,13 +185,18 @@ function Index() {
             <h3>Pergola</h3>
           </article>
 
-          <article className="product-card" id="carport">
+          <a
+            className="product-card product-card-link"
+            id="carport"
+            href="/carport"
+            aria-label="View Baasveranda 111S 3x5m Carport"
+          >
             <img
               src="/assets/carport.webp"
               alt="White SUV parked beneath a modern black carport."
             />
             <h3>Carport</h3>
-          </article>
+          </a>
 
           <article className="product-card" id="deck-box">
             <img
