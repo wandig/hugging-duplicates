@@ -1174,7 +1174,7 @@ details p {
   padding: 0 10px;
   border-radius: 999px;
   color: var(--white);
-  background: #3f9bbb;
+  background: #f6961c;
   font-size: 0.78rem;
   font-weight: 900;
 }
@@ -1188,7 +1188,7 @@ details p {
 }
 
 .product-price {
-  color: #258fb5;
+  color: #f6961c;
   font-size: 1.28rem;
   font-weight: 500;
 }
@@ -1307,8 +1307,8 @@ details p {
 }
 
 .add-cart-button {
-  border: 2px solid #2e9bc0;
-  color: #2e9bc0;
+  border: 2px solid #f6961c;
+  color: #f6961c;
   background: var(--white);
 }
 
