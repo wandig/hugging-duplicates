@@ -1324,6 +1324,106 @@ details p {
   font-style: italic;
 }
 
+.product-about-section {
+  display: grid;
+  grid-template-columns: minmax(360px, 0.45fr) minmax(520px, 0.55fr);
+  gap: clamp(56px, 7vw, 112px);
+  align-items: start;
+  margin-top: 86px;
+  padding-top: 2px;
+}
+
+.product-about-copy {
+  padding-top: 2px;
+}
+
+.product-about-kicker {
+  margin-bottom: 29px;
+  color: var(--ink);
+  font-size: 0.98rem;
+  font-weight: 900;
+}
+
+.product-about-copy h2 {
+  max-width: 670px;
+  margin-bottom: 32px;
+  color: #252525;
+  font-size: clamp(2.05rem, 2.5vw, 2.9rem);
+  font-weight: 900;
+  line-height: 1.12;
+}
+
+.product-about-copy p:not(.product-about-kicker) {
+  max-width: 660px;
+  margin-bottom: 27px;
+  color: var(--ink);
+  font-size: 0.98rem;
+  line-height: 1.72;
+}
+
+.product-spec-card {
+  min-height: 626px;
+  padding: 32px 50px 26px;
+  border-radius: 8px;
+  background: #f4f4f4;
+}
+
+.spec-row {
+  display: grid;
+  grid-template-columns: minmax(160px, 0.29fr) minmax(260px, 0.71fr);
+  gap: 40px;
+  align-items: start;
+  min-height: 76px;
+  padding: 26px 0;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.spec-row:first-child {
+  padding-top: 12px;
+}
+
+.spec-row strong {
+  color: #262626;
+  font-size: 0.98rem;
+  font-weight: 900;
+}
+
+.spec-row span,
+.spec-row p {
+  color: #606060;
+  font-size: 0.98rem;
+  line-height: 1.55;
+}
+
+.spec-row p {
+  margin: 0 0 4px;
+}
+
+.spec-view-all {
+  min-height: 58px;
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  border: 0;
+  color: var(--ink);
+  background: transparent;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.spec-view-all span {
+  width: 24px;
+  height: 24px;
+  display: inline-grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #dedede;
+  font-size: 0.94rem;
+  line-height: 1;
+}
+
 .overlay {
   position: fixed;
   inset: 0;
@@ -1435,6 +1535,11 @@ details p {
 
   .product-detail {
     grid-template-columns: 1fr;
+  }
+
+  .product-about-section {
+    grid-template-columns: 1fr;
+    gap: 42px;
   }
 }
 
@@ -1569,6 +1674,26 @@ details p {
 
   .product-actions {
     grid-template-columns: 1fr;
+  }
+
+  .product-about-section {
+    margin-top: 58px;
+  }
+
+  .product-about-copy h2 {
+    font-size: 2rem;
+  }
+
+  .product-spec-card {
+    min-height: 0;
+    padding: 22px 24px 18px;
+  }
+
+  .spec-row {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    min-height: 0;
+    padding: 22px 0;
   }
 
   .comparison {

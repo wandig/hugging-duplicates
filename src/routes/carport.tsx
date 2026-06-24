@@ -167,6 +167,71 @@ function CarportProduct() {
           </div>
         </div>
       </section>
+
+      <section className="product-about-section" aria-label="About this carport">
+        <div className="product-about-copy">
+          <p className="product-about-kicker">About</p>
+          <h2>
+            Discover a smarter way to protect your vehicle with this durable,
+            season-ready carport
+          </h2>
+          <p>
+            Whether shielding your car from rain, snow, or harsh sun, this
+            freestanding carport is designed to deliver dependable protection
+            with understated modern style. Its clean lines and robust
+            construction bring lasting strength to your outdoor space, while the
+            generous 236 cm height allows taller vehicles to pass through with
+            ease. Thoughtfully proportioned to accommodate one vehicle
+            comfortably, it offers generous coverage for everyday protection.
+            Built for demanding conditions, this durable structure withstands
+            snow loads of up to 200 kg/m² (41 psf), giving you greater
+            confidence throughout the year. If the weather turns wet, our
+            patented Integrated Drainage System channels water away, helping keep
+            the space underneath clean and dry.
+          </p>
+          <p>
+            Freestanding and flexible in placement, it adapts easily to the
+            layout of your property. Strong, practical, and built to endure, this
+            carport makes everyday protection feel effortless.
+          </p>
+        </div>
+
+        <div className="product-spec-card">
+          <div className="spec-row spec-row-dimensions">
+            <strong>Product Dimensions</strong>
+            <div>
+              <p>Product maximum dimensions:</p>
+              <p>307.7 × 499.0 × 250.8 cm</p>
+              <p>Product interior dimensions:</p>
+              <p>272.5 × 481.4 × 236.5 cm</p>
+            </div>
+          </div>
+          <div className="spec-row">
+            <strong>Materials</strong>
+            <span>Aluminum + steel</span>
+          </div>
+          <div className="spec-row">
+            <strong>Roof type</strong>
+            <span>Hardtop</span>
+          </div>
+          <div className="spec-row">
+            <strong>Net weight</strong>
+            <span>186.26kg</span>
+          </div>
+          <div className="spec-row">
+            <strong>Warranty</strong>
+            <span>3 years</span>
+          </div>
+          <div className="spec-row">
+            <strong>Snow load</strong>
+            <span>200 kg/m²</span>
+          </div>
+          <button className="spec-view-all" type="button">
+            View all
+            <span aria-hidden="true">⌄</span>
+          </button>
+        </div>
+      </section>
     </main>
   );
 }
