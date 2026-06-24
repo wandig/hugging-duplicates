@@ -61,7 +61,7 @@ window.addEventListener("keydown", (event) => {
 });
 
 document.querySelectorAll("[data-compare]").forEach((input) => {
-  const comparison = input.closest(".compare");
+  const comparison = input.closest(".compare, .carport-compare");
   input.addEventListener("input", () => {
     comparison.style.setProperty("--position", `${input.value}%`);
   });

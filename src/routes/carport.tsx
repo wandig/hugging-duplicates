@@ -42,6 +42,7 @@ export const Route = createFileRoute("/carport")({
 function CarportProduct() {
   const [activeImage, setActiveImage] = useState(productImages[0]);
   const [quantity, setQuantity] = useState(1);
+  const [comparisonPosition, setComparisonPosition] = useState(94);
 
   return (
     <main className="product-page">
@@ -230,6 +231,36 @@ function CarportProduct() {
             View all
             <span aria-hidden="true">⌄</span>
           </button>
+        </div>
+      </section>
+
+      <section className="carport-comparison-section" aria-label="Carport before and after">
+        <div
+          className="carport-compare"
+          style={{ ["--position" as any]: `${comparisonPosition}%` }}
+        >
+          <img
+            className="carport-compare-before"
+            src="/assets/carport-before-wide.webp"
+            alt="Driveway with a charcoal carport before the vehicle is parked underneath."
+          />
+          <div className="carport-compare-after">
+            <img
+              src="/assets/carport-after-wide.webp"
+              alt="Driveway with a white SUV protected underneath the charcoal carport."
+            />
+          </div>
+          <span className="label before-label">Before</span>
+          <span className="label after-label">After</span>
+          <div className="compare-handle" aria-hidden="true"></div>
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value={comparisonPosition}
+            aria-label="Reveal before or after carport image"
+            onChange={(event) => setComparisonPosition(Number(event.target.value))}
+          />
         </div>
       </section>
     </main>
